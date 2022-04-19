@@ -1,0 +1,80 @@
+html{
+    height: auto;
+    max-width: auto;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background-image: linear-gradient(to bottom, #1a2980cc, #26d0cd9a); */
+    background-image: url(images/portbkg.jpg);
+    background-position: center;
+    background-size: auto;
+}
+
+.container{
+height: auto;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content:space-evenly;
+    height: 60px;
+    /* background-color:rgb(95, 95, 95); */
+    opacity: 80%;
+    width:100%;
+}
+
+nav{
+    color: rgb(255, 255, 255);
+    font-size: 1.8vw;
+    padding-top: 20px;
+    border-bottom: 3px solid white;
+}
+.navbutton1, .navbutton2, .navbutton3{
+    padding: 10px 24px;
+    /* border: solid 2px white; */
+    /* background-image: linear-gradient(to right, #1a298023, #26d0cd1f); */
+    border-radius: 30px;
+}
+
+.aboutmeflex{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.aboutme{
+    max-height: 400px;
+    max-width: auto;
+    margin: 20px;
+    flex: 2;
+    border: 5px solid white;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+
+.aboutmeimg{
+    height: 400px;
+    flex: 1;
+    margin: 20px;
+    /* background-color: white; */
+}
+
+.icons{
+    display: flex;
+    justify-content:center;
+}
+
+.twittericon, .instagramicon, .linkedinicon, .soundcloudicon{
+    font-size: 3vw ;
+    padding: 10px 24px;
+}
+
+@media screen and (max-width: 800px) {
+    .aboutme, .aboutmeimg {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
